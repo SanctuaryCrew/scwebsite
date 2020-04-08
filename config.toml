@@ -1,6 +1,6 @@
-baseURL = "https://testbed.sanctuarycrew.com"
+baseURL = "https://www.sanctuarycrew.com"
 languageCode = "en-us"
-title = "Sanctuary Crew Testbed"
+title = "Sanctuary Crew Gaming"
 theme = "SanctuaryCrew"
 publishDir   = "../public"
 
@@ -103,8 +103,8 @@ googleAnalytics = ""
 
     google_verification = ""
    
-    description = "" # site description
-    keywords = "" # site keywords
+    description = "SanctuaryCrew Website with news, articles, and links to our Tiwtch channel and other social media" # site description
+    keywords = "SanctuaryCrew Sanctuary Crew Twitch Gaming" # site keywords
 
     license = 'Copyright © 1990-{year} Sanctuary Crew - All Rights Reserved'
 
