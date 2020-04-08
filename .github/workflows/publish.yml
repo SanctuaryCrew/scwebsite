@@ -4,9 +4,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Prepare copy of base repository
+        # If (nr) appears in the commit, don't regenerate the site via git
+        if: "!contains(github.event.head_commit.message, '(nr)')"
         run: git clone ${{ secrets.SCWEB_GITHUB_TOKENURL }} --origin source && cd scwebsite
 
       - name: Publish to www.sanctuarycrew.com
+        # If (nr) appears in the commit, don't regenerate the site via git
+        if: "!contains(github.event.head_commit.message, '(nr)')"
         run: |
           set -e
           mkdir -p ~/.ssh
