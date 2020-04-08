@@ -44,17 +44,20 @@ jQuery(function($) {
         })
     }
 
+    // This section recolors certain icons depending on the theme, for maximum visibility
     _Blog.toggleIcons = function() {
         if (document.body.classList.contains('dark-theme')) {
             // Dark theme
             document.getElementById('twitchicon').style.stroke='rgb(200,165,264)';
             document.getElementById('twittericon').style.stroke='rgb(0,200,200)';
             document.getElementById('twittericon').style.fill='rgb(0,200,200)';
+            document.getElementById('youtubeicon').style.stroke='rgb(255,255,255)';
         } else {
             // Light theme
             document.getElementById('twitchicon').style.stroke='rgb(100,65,164)';
             document.getElementById('twittericon').style.stroke='rgb(0,0,200)';
             document.getElementById('twittericon').style.fill='rgb(0,0,200)';
+            document.getElementById('youtubeicon').style.stroke='rgb(255,0,0)';
         }
     }
 

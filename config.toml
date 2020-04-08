@@ -70,6 +70,12 @@ googleAnalytics = ""
     name = "About SC"
     title = "What is Sanctuary Crew all about?"
     url = "/about/"
+    weight = 998
+
+  [[menu.main]]
+    name = "Theme Switch"
+    title = "Toggle Light/Dark modes"
+    url = "toggle"
     weight = 999
 
 [params]
