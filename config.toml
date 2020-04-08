@@ -43,22 +43,28 @@ googleAnalytics = ""
     weight = 3
 
   [[menu.main]]
+    name = "YouTube"
+    title = "Go to our YouTube channel"
+    url = "https://www.youtube.com/channel/UCZAQuPVqo2VZh_pvlABUHKA"
+    weight = 4
+
+  [[menu.main]]
     name = "Twitter"
     title = "Go to our Twitter account"
     url = "https://www.twitter.com/sanctuarygaming"
-    weight = 4
+    weight = 5
 
   [[menu.main]]
     name = "Categories"
     title = "See posts by a given category"
     url = "/categories/"
-    weight = 5
+    weight = 6
 
   [[menu.main]]
     name = "Tags"
     title = "See posts by given tags"
     url = "/tags/"
-    weight = 6
+    weight = 7
 
   [[menu.main]]
     name = "Profiles"
