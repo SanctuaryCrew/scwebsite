@@ -8,7 +8,7 @@ Insane scripting. The back-end of this thing is something else.
 
 # Licensing?
 
-Good question! The theme that the site is built upon is a relatively simple theme based on [LeaveIt](https://github.com/liuzc/LeaveIt) with pieces from [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng) as well. It, like both previously mentioned themes, is [MIT-licensed](https://github.com/SanctuaryCrew/scwebsite/blob/master/themes/SanctuaryCrew/LICENSE.md).
+Good question! The theme that the site is built upon is a relatively simple theme based on [LeaveIt](https://github.com/liuzc/LeaveIt) with pieces from [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng) as well. It, like both previously mentioned themes, is [MIT-licensed](https://github.com/SanctuaryCrew/scwebsite/blob/master/themes/SanctuaryCrew/LICENSE.md). The theme also uses assets from two previous incarnations of the Sanctuary Crew website, graciously designed by Kirsten 'Floofy' Miller.
 
 ## HOWEVER!
 
@@ -18,7 +18,9 @@ Good question! The theme that the site is built upon is a relatively simple them
 
 * The **static** folder with the exception of the **fonts** subfolder is Copyright © 1990-2020 Sanctuary Crew - All Rights Reserved
 
-* Individual scripts are Copyright their respective owners. See each script for licensing.
+## Individual scripts are Copyright their respective owners. See each script for licensing.
+* * lazysizes - https://github.com/aFarkas/lazysizes
+
 
 # Contribution instructions for SC members?
 

@@ -1,6 +1,7 @@
 The MIT License (MIT)
 
 Copyright (c) 2020 Firehawke of Sanctuary Crew
+Portions of the site design are Copyright (c) 2010-2020 by Kirsten 'Floofy' Miller
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
