@@ -18,9 +18,9 @@ Good question! The theme that the site is built upon is a relatively simple them
 
 * The **static** folder with the exception of the **fonts** subfolder is Copyright © 1990-2020 Sanctuary Crew - All Rights Reserved
 
-## Individual scripts are Copyright their respective owners. See each script for licensing.
+Individual scripts and icons are Copyright their respective owners. See each script for licensing.
 * * lazysizes - https://github.com/aFarkas/lazysizes
-
+* * SVG icons are slightly modified versions of those provided by [Feather](https://github.com/feathericons/feather) under MIT license, and as such the modifications are also MIT licensed.
 
 # Contribution instructions for SC members?
 
