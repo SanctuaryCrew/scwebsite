@@ -1,0 +1,13 @@
+{{/* This shouldn't really be used at all. It's a duplicate of the
+Author line at the bottom of each post. Nevertheless, it's here if it's needed.
+Access it using {{< sig >}} at the end of a post. */}}
+
+{{ with .Page.Params }}
+{{- if (eq .author "Firehawke") -}}
+    <p style="text-align: right"> -- Firehawke</p>
+{{- else if (eq .author "CK20XX") -}}
+    <p style="text-align: right"> -- CK20XX</p>
+{{- else -}}
+    <!-- No author, so unattributed -->
+{{- end -}}
+{{ end }}

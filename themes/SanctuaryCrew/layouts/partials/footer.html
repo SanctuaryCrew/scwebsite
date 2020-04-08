@@ -1,0 +1,11 @@
+<footer class="footer">
+    <div class="copyright">
+        &copy;
+        {{ with .Site.Params.since }}
+        <span itemprop="copyrightYear">{{.}} - {{ now.Year }}</span>
+        {{ end }}
+            <span class="author" itemprop="copyrightHolder"><a href="{{ .Site.BaseURL }}">by Sanctuary Crew - All Rights Reserved</a></span> 
+    </div>
+</footer>
+
+{{ partial "js.html" . }}

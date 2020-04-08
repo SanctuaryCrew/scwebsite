@@ -1,0 +1,98 @@
+baseURL = "https://testbed.sanctuarycrew.com"
+languageCode = "en-us"
+title = "Sanctuary Crew Testbed"
+theme = "SanctuaryCrew"
+publishDir   = "../public"
+
+paginate = 12
+enableEmoji = false
+enableRobotsTXT = true
+googleAnalytics = ""
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
+
+[Permalinks]
+  news = "/news/:year/:month/:filename/"
+  articles = "/articles/:year/:month/:filename/"
+
+# menu entry ignores style/icon, must pass as pre/post
+[menu]
+  [[menu.main]]
+    name = "News"
+    title = "The latest news about the Sanctuary Crew"
+    url = "/news/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Articles"
+    title = "Articles written by Sanctuary Crew members"
+    url = "/articles/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Twitch"
+    title = "Go to our Twitch channel"
+    url = "https://www.twitch.tv/sanctuarycrew"
+    weight = 3
+
+  [[menu.main]]
+    name = "Twitter"
+    title = "Go to our Twitter account"
+    url = "https://www.twitter.com/sanctuarygaming"
+    weight = 4
+
+  [[menu.main]]
+    name = "Categories"
+    title = "See posts by a given category"
+    url = "/categories/"
+    weight = 5
+
+  [[menu.main]]
+    name = "Tags"
+    title = "See posts by given tags"
+    url = "/tags/"
+    weight = 6
+
+  [[menu.main]]
+    name = "Profiles"
+    title = "So who ARE these people anyway?!"
+    url = "/profiles/"
+    weight = 997
+
+  [[menu.main]]
+    name = "About SC"
+    title = "What is Sanctuary Crew all about?"
+    url = "/about/"
+    weight = 999
+
+[params]
+    sitetip = "Got an idea for a tagline? Let Firehawke know. :P"
+    since = 1990
+    author = "Sanctuary Crew"           # Default author name if not supplied.
+    authortype = "Organization"       # Can be "Organization" or "Person"
+    avatar = "/logos/logo1.jpg"       # Default logo, is overridden by javascript
+    subtitle = "Sanctuary Crew Gaming"  # Subtitle
+    cdn_url = ""           # Base CDN URL - We don't use one.
+
+    home_mode = "post" # post or other
+
+    # home_mode = "" # post or other
+    dateform        = "Jan 2, 2006"
+    dateformShort   = "Jan 2"
+    dateformNum     = "01-02-2006"
+    dateformNumTime = "Monday, Jan-02-2006 at 03:04:05 MST"
+
+    google_verification = ""
+   
+    description = "" # site description
+    keywords = "" # site keywords
+
+    license = 'Copyright © 1990-{year} Sanctuary Crew - All Rights Reserved'
+

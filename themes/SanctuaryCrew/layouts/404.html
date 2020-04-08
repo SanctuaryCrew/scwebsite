@@ -1,0 +1,21 @@
+{{ define "content" }}
+
+<div>
+
+  <img id="errorpic" style="display: block; margin-left: auto; margin-right: auto;" class="center" alt="404: Your File is in Another Castle!" src="404-1.png">
+
+  <script type="text/javascript">
+
+
+      // Currently logos exist from 404-1.png through 404-1.png
+      // Yep, only one pic for now.
+      // Change this if you add more.
+
+      let picnum = getRandomLogoNum(1,1);
+      document.getElementById("errorpic").src = "/404-"+picnum.toString()+".png";
+   
+  </script>
+  <p class="error-text" style="text-align:center">404: Goonies not found.</p>
+  <p class="error-link" style="text-align:center"><a href="{{ .Site.BaseURL }}">↑ Back Home ↑</a></p>
+</div>
+ {{ end }}

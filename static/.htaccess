@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
+
+# Deny access to .htaccess
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+# Block the .git folder.
+RedirectMatch 404 /\.git
+RedirectMatch 404 /\.gitignore
+
+# Error page
+ErrorDocument 404 /404.html

@@ -1,0 +1,26 @@
+{{ $cdn_url := .Scratch.Get "cdn_url" }}
+{{ $postHasImages :=  .Scratch.Get "postHasImages"}}
+{{ $jquery := resources.Get "/js/jquery.min.js" }}
+{{ $lazysizes := resources.Get "/js/lazysizes.min.js"}}
+{{ $dynamic := resources.Get "/js/dynamic.to.top.min.js" }}
+{{ $prism := resources.Get "/js/prism.js" }}
+{{ $main := resources.Get "/js/main.js" }}
+
+{{ if .IsPage }}
+
+    {{ if $postHasImages }}
+     {{ $vendorscript := slice $jquery $prism $lazysizes $dynamic $main | resources.Concat "/js/vendor_images.js" | resources.Minify }} 
+     <script src="{{ printf "%s%s" $cdn_url $vendorscript.RelPermalink }}" async="" ></script>
+    {{ else }}
+    {{ $vendorscript := slice $jquery $prism $dynamic $main | resources.Concat "/js/vendor_no_images.js" | resources.Minify }}
+    <script src="{{ printf "%s%s" $cdn_url $vendorscript.RelPermalink }}" async=""></script>
+    {{ end }}
+  
+{{ else }}
+    {{ $main := slice  $jquery $main | resources.Concat "/js/vendor_main.js" | resources.Minify}}
+    <script src="{{ printf "%s%s" $cdn_url $main.RelPermalink }}" async=""></script>
+{{ end }}
+
+{{ if eq ( getenv "HUGO_ENV" ) "production" }}
+  {{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
