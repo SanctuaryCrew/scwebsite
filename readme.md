@@ -2,6 +2,12 @@
 
 This is a repository directly linked to the website generation for https://www.sanctuarycrew.com.
 
+# Status
+
+Status of most recent build: ![](https://github.com/SanctuaryCrew/scwebsite/workflows/.github/workflows/publish.yml/badge.svg)
+
+If this shows as failed, look at Actions report of what was broken and fix it.
+
 # How?
 
 Insane scripting. The back-end of this thing is something else.
