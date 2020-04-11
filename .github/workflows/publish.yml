@@ -13,8 +13,7 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           mkdir -p ~/.ssh
-          cp /root/.ssh/* ~/.ssh/ 2> /dev/null || true 
-          export GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"         
+          cp /root/.ssh/* ~/.ssh/ 2> /dev/null || true
           RESPONSE=$(${{ secrets.SC_SSH_REBUILDCOMMAND }} 2>&1 |tee >(cat 1>&2) | grep "Error" || true)
           if ([[ $RESPONSE = *Error* ]]) then exit 1; fi
         env:
