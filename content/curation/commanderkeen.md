@@ -8,7 +8,8 @@ categories:
  - Authored by CK20XX
 tags:
   - Review
-steamcuration: "Super Mario Bros. 3 led to this historically significant series. Its vertical platforming and limited ammo are still a unique combo, though this collection is missing the two "lost" episodes."
+steamcuration: >
+  "Super Mario Bros. 3 led to this historically significant series. Its vertical platforming and limited ammo are still a unique combo, though this collection is missing the two "lost" episodes."
 draft: false
 ---
 
