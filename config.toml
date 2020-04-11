@@ -12,6 +12,7 @@ googleAnalytics = ""
 [taxonomies]
   tag = "tags"
   category = "categories"
+  review = "reviews"
 
 [blackfriday]
   hrefTargetBlank = true
@@ -54,17 +55,24 @@ googleAnalytics = ""
     url = "https://www.twitter.com/sanctuarygaming"
     weight = 5
 
+
+  [[menu.main]]
+    name = "Reviews"
+    title = "See reviews by Sanctuary Crew members"
+    url = "/curation/"
+    weight = 6
+
   [[menu.main]]
     name = "Categories"
     title = "See posts by a given category"
     url = "/categories/"
-    weight = 6
+    weight = 7
 
   [[menu.main]]
     name = "Tags"
     title = "See posts by given tags"
     url = "/tags/"
-    weight = 7
+    weight = 8
 
   [[menu.main]]
     name = "Profiles"
