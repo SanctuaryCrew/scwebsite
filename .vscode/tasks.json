@@ -4,6 +4,11 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Generate a new page (creates RenameMe.md)",
+            "type": "shell",
+            "command": "hugo new ${input:category}/RenameMe.md"
+        },
+        {
             "label": "Hugo server (Allow LAN connection on 192.168.0.10)",
             "type": "shell",
             "command": "hugo server -D --bind=192.168.0.10"
@@ -27,5 +32,20 @@
                 "isDefault": true
             }
         }
+    ],
+    "inputs": [
+        {
+            "id": "category",
+            "type": "pickString",
+            "description": "Category of page to create: 'articles', 'curation', 'news', or 'profiles'",
+            "options": [
+                "articles",
+                "curation",
+                "news",
+                "profiles"
+            ],
+        }
     ]
-}
+}   
+
+
