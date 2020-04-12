@@ -39,15 +39,16 @@
             </p>
     </div>
 
- 
     <div class="post-nav">
-        {{ if .PrevInSection }}
-        <a href="{{.PrevInSection.Permalink}}" class="prev" rel="prev" title="{{ .PrevInSection.Title}}"><i class="iconfont icon-left"></i>&nbsp;{{ .PrevInSection.Title}}</a>
-        {{ end }} 
-        {{ if .NextInSection }}
-        <a href="{{.NextInSection.Permalink}}" class="next" rel="next" title="{{.NextInSection.Title}}">{{.NextInSection.Title}}&nbsp;<i class="iconfont icon-right"></i></a>
+        {{ $pages := where site.RegularPages "Section" .Section }}
+        {{ with $pages.ByTitle.Next . }}
+            <a href="{{ .Permalink }}" class="prev" rel="prev" title="{{ .Title }}"><i class="iconfont icon-left"></i>&nbsp;{{ .Title }}</a>
+        {{ end }}
+    
+        {{ with $pages.ByTitle.Prev . }}
+            <a href="{{ .Permalink }}" class="next" rel="next" title="{{ .Title }}">{{ .Title }}&nbsp;<i class="iconfont icon-right"></i></a>
         {{ end }}
     </div>
-
+    
 </article>
 {{- end }}
