@@ -1,56 +1,11 @@
 /** Font **/
 
-@font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
-  font-display: auto;
-  font-weight: 400;
-  src: url("/fonts/Inter-UI-Regular.woff2") format("woff2"),
-       url("/fonts/Inter-UI-Regular.woff") format("woff");
-}
+/** 
+Import Google Fonts
+See https://developers.google.com/fonts/faq2#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users
+for why we're caching them through Google instead of local hosting. **/
 
-@font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
-  font-display: auto;
-  font-weight: 400;
-  src: url("/fonts/Inter-UI-Italic.woff2") format("woff2"),
-       url("/fonts/Inter-UI-Italic.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
-  font-display: auto;
-  font-weight: 600;
-  src: url("/fonts/Inter-UI-Medium.woff2") format("woff2"),
-       url("/fonts/Inter-UI-Medium.woff") format("woff");
-}
-@font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
-  font-display: auto;
-  font-weight: 600;
-  src: url("/fonts/Inter-UI-MediumItalic.woff2") format("woff2"),
-       url("/fonts/Inter-UI-MediumItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
-  font-display: auto;
-  font-weight: 800;
-  src: url("/fonts/Inter-UI-Bold.woff2") format("woff2"),
-       url("/fonts/Inter-UI-Bold.woff") format("woff");
-}
-@font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
-  font-display: auto;
-  font-weight: 800;
-  src: url("/fonts/Inter-UI-BoldItalic.woff2") format("woff2"),
-       url("/fonts/Inter-UI-BoldItalic.woff") format("woff");
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@500&family=PT+Sans+Narrow&display=swap');
 
   html {
     &::-webkit-scrollbar {
@@ -76,9 +31,9 @@
   }
   
   html {
-    /* font: 14px/normal Tahoma, Arial, Helvetica, sans-serif; */
-    //font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft Yahei", "WenQuanYi Micro Hei", Arial, Verdana, sans-serif;
-    font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif;
+    
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif; */
   }
   
   body {

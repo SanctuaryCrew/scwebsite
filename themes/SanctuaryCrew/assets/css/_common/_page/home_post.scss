@@ -10,6 +10,23 @@
         }
     }
 
+    .post-meta {
+
+        a {
+            color: $light-global-link-color !important;
+            .dark-theme & {
+                color: $dark-global-link-color !important;
+            }
+
+            &:hover {
+                color: $light-global-link-hover-color !important;
+                .dark-theme & {
+                    color: $dark-global-link-hover-color !important;
+                }
+            }
+        }
+    }
+    
     .post {
         margin-bottom: 4em;
         border-bottom: 1px dashed #ddd;
@@ -25,15 +42,15 @@
 
             .post-meta {
                 a {
-                    color: rgba(85, 85, 85, 0.52941) !important;
+                    color: $light-global-link-color !important;
                     .dark-theme & {
-                        color: $dark-font-secondary-color !important;
+                        color: $dark-global-link-color !important;
                     }
 
                     &:hover {
-                        color: $light-font-secondary-color !important;
+                        color: $light-global-link-hover-color !important;
                         .dark-theme & {
-                            color: $dark-font-secondary-color !important;
+                            color: $dark-global-link-hover-color !important;
                         }
                     }
                 }
@@ -41,15 +58,16 @@
             .post-tags {
                 span {
                     a {
-                        color: rgba(85, 85, 85, 0.52941) !important;
+                        color: $light-global-link-color !important;
                         .dark-theme & {
-                            color: $dark-font-secondary-color !important;
+                            color: $dark-global-link-color !important;
                         }
 
                         &:hover {
-                            color: $light-font-secondary-color !important;
+                            transform: scale(1.2);
+                            color: $light-global-link-hover-color !important;
                             .dark-theme & {
-                                color: $dark-font-secondary-color !important;
+                                color: $dark-global-link-hover-color !important;
                             }
                         }
                     }

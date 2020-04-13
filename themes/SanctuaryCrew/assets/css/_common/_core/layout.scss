@@ -8,6 +8,7 @@
   }
   
   .navbar {
+    font-family: 'Oswald', sans-serif;
     height: 4rem;
     line-height: 4rem;
     width: 100%;
@@ -18,6 +19,21 @@
       margin: 0 auto;
       display: flex;
       justify-content: space-between; 
+      a {
+        color: $light-menu-link-color;
+        .dark-theme & {
+          color: $dark-menu-link-color;
+      }
+      &:hover {
+        color: $light-menu-link-hover-color;
+        .dark-theme & {
+            color: $dark-menu-link-hover-color;
+        }
+    }
+
+
+    }
+
     }
   }
   

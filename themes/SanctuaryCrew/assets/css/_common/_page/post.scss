@@ -9,15 +9,19 @@
 
     .post-header h1 {
         margin: 0 !important;
+        font-family: 'Oswald', sans-serif;
     }
 
     .post-title {
         font-size: 2em;
         line-height: 1.5em;
+        a {
+            font-family: 'PT Sans Narrow', sans-serif;
+        }
     }
 
     .post-meta {
-        color: rgba(85, 85, 85, 0.52941) !important;
+        color: $light-font-secondary-color !important;
         .dark-theme & {
             color: $dark-font-secondary-color !important;
         }
@@ -195,9 +199,9 @@
             margin: 5px 0;
         }
 
-        .lincese {
+        .license {
             font-weight: bold;
-            & a {}
+            //& a {}
         }
 
         .dark-theme & {
