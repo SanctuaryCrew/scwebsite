@@ -10,8 +10,8 @@ memberaliases: TheCrimsonBlade, ZeriosGavilan
 location: Baton Rouge, LA
 favgenres: RPG, SRPG, Action RPG, Action, Platformers, Adventure,
 favgames: >
-            Super Robot Wars Series, Ys Series, Super Mario RPG, Skies of Arcadia, The Legend of Heroes: Trails/Kiseki Series, Mischief Makers, VA-11 HALL-A,
-favplatforms: NES, Genesis, PSX, PS2, PC
+            Super Robot Wars Series, Ys Series, Super Mario RPG, Skies of Arcadia, The Legend of Heroes: Trails/Kiseki Series, Mischief Makers, VA-11 HALL-A
+favplatforms: SNES, PS2, DS, PC
 moststreamed: Sal is on hiatus, but if he was streaming, it would be a random doujin game, an adventure title, an RPG, or an action RPG.
 quote: To Be Decided...
 shortsummary: Sal is an average bystander on a journey through life.
