@@ -17,7 +17,8 @@ shortsummary: Firehawke is the founder of Sanctuary Crew.
 draft: false
 ---
 
-Firehawke is the founder of the Sanctuary Crew and the oldest member. His performance is somewhat inconsistent these days as arthritis takes its toll on his hands, but he still might be able to surprise you with his tricks. He also acts as the primary technical support for the group.
+Firehawke is the founder of the Sanctuary Crew and the oldest member. His performance is somewhat inconsistent these days as neuropathy and fibromyalgia take their toll on his body, but he still might be able to surprise you with his tricks. He also acts as the primary technical support for the group.
+
 Firehawke’s first console was an Atari 2600 and his first computer had only 4K of RAM.
 
 Firehawke has a [Blog](https://firehawke.sanctuarycrew.com).
